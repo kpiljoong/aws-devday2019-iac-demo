@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("source-map-support/register");
+const cdk = require("@aws-cdk/core");
+const pastebin_stack_1 = require("../lib/pastebin-stack");
+const app = new cdk.App();
+new pastebin_stack_1.PastebinStack(app, 'PastebinStack');
+new pastebin_stack_1.LoaderStack(app, "TestLoaderSTack");
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFzdGViaW4uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJwYXN0ZWJpbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFDQSx1Q0FBcUM7QUFDckMscUNBQXNDO0FBQ3RDLDBEQUFtRTtBQUVuRSxNQUFNLEdBQUcsR0FBRyxJQUFJLEdBQUcsQ0FBQyxHQUFHLEVBQUUsQ0FBQztBQUMxQixJQUFJLDhCQUFhLENBQUMsR0FBRyxFQUFFLGVBQWUsQ0FBQyxDQUFDO0FBQ3hDLElBQUksNEJBQVcsQ0FBQyxHQUFHLEVBQUUsaUJBQWlCLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIiMhL3Vzci9iaW4vZW52IG5vZGVcbmltcG9ydCAnc291cmNlLW1hcC1zdXBwb3J0L3JlZ2lzdGVyJztcbmltcG9ydCBjZGsgPSByZXF1aXJlKCdAYXdzLWNkay9jb3JlJyk7XG5pbXBvcnQgeyBQYXN0ZWJpblN0YWNrLCBMb2FkZXJTdGFjayB9IGZyb20gJy4uL2xpYi9wYXN0ZWJpbi1zdGFjayc7XG5cbmNvbnN0IGFwcCA9IG5ldyBjZGsuQXBwKCk7XG5uZXcgUGFzdGViaW5TdGFjayhhcHAsICdQYXN0ZWJpblN0YWNrJyk7XG5uZXcgTG9hZGVyU3RhY2soYXBwLCBcIlRlc3RMb2FkZXJTVGFja1wiKTtcbiJdfQ==
